@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - Entrevista de Emprego</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f9f9f9;
+      }
+
+      .container {
+        text-align: center;
+        max-width: 600px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 180px;
+      }
+
+      .container h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .container h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .instructions {
+        text-align: left;
+        margin: 0 auto;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        background-color: #fdfdfd;
+      }
+
+      .instructions p {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+
+      .instructions ol {
+        padding-left: 20px;
+      }
+
+      .instructions ol li {
+        margin: 10px 0;
+        font-size: 14px;
+      }
+
+      .play-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: linear-gradient(to right, #6a9df5, #3b69f3);
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+
+      .play-button:hover {
+        background: linear-gradient(to right, #3b69f3, #6a9df5);
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0px;
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz</h1>
+      <h2>12 Perguntas que podem cair na sua Entrevista de Emprego</h2>
+      <div class="instructions">
+        <p><strong>Como Jogar?</strong></p>
+        <ol>
+          <li>Clique no botão abaixo escrito "Jogar".</li>
+          <li>
+            Perguntas comuns em entrevistas de emprego aparecerão. Você terá de
+            dizer se elas são: Pessoais, Experiências, Futuro ou Empresa.
+          </li>
+          <li>
+            Leia atentamente e responda clicando em apenas uma das opções.
+          </li>
+        </ol>
+      </div>
+      <a href="question.html" class="play-button">Jogar</a>
+    </div>
+    <footer class="footer">
+      <p>Mateus Bosquetti e Pedro Panstein</p>
+      <p>&copy; 2024 WEG / SENAI</p>
+    </footer>
+  </body>
+</html>
