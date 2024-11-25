@@ -14,6 +14,7 @@ body {
   background-position: bottom;
   background-size: cover;
   height: 100dvh;
+  padding: 20px;
 }
 
 .headerContent {
@@ -44,7 +45,8 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   height: 300px;
   padding: 2% 0%;
   border-radius: 30px;
@@ -53,10 +55,12 @@ body {
 }
 
 .questions-content p {
-  background-color: #fff;
-  color: #000;
+  background-color: rgba(201, 201, 201, 0.7);
+  color: #333;
+  font-weight: 700;
   border-radius: 13px;
   margin: 10px 0px;
+  max-width: 300px;
   width: 100%;
   padding: 20px 10px;
   cursor: pointer;
@@ -65,6 +69,7 @@ body {
 }
 
 .questions-content p:hover {
+  background-color: rgba(201, 201, 201, 1);
   transform: scale(1.02);
   box-shadow: 0px 0px 10px #181818;
 }
@@ -75,6 +80,7 @@ body {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   width: 640px;
 }
@@ -83,14 +89,22 @@ body {
   margin-top: 1rem;
 }
 
-.Question.correct {
-  background-color: green;
+.question.correct {
+  background-color: rgba(0, 128, 0, 0.6);
   color: white;
 }
 
+.Question.correct:hover {
+  background-color: rgba(0, 128, 0, 1);
+}
+
 .Question.error {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.6);
   color: white;
+}
+
+.Question.error:hover {
+  background-color: rgba(255, 0, 0, 1);
 }
 
 #contador-acertos {
@@ -121,4 +135,26 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 717px) {
+  .questions-content {
+    height: 500px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 640px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .questions-content p {
+    width: 220px;
+  }
 }
