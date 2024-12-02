@@ -82,7 +82,6 @@ function atualizarPergunta(chave, chavesPerguntas) {
 // Função para verificar a resposta clicada
 function verificarResposta(elemento, respostaCorreta, chavesPerguntas) {
   const alternativaSelecionada = elemento.innerText.trim(); // Captura diretamente o texto da alternativa clicada
-
   // Resetar classes
   document.querySelectorAll(".flex p").forEach((p) => {
     p.classList.remove("correct", "error");
@@ -96,9 +95,9 @@ function verificarResposta(elemento, respostaCorreta, chavesPerguntas) {
     elemento.classList.add("error");
 
     // Encontrar e marcar a resposta correta
-    document.querySelectorAll(".flex p").forEach((p) => {
-      if (p.innerText.includes(respostaCorreta)) {
-        p.classList.add("correct");
+    document.querySelectorAll(".Question").forEach((e) => {
+      if (e.innerText.trim() == respostaCorreta) {
+        e.classList.add("correct")
       }
     });
   }

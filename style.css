@@ -89,22 +89,19 @@ body {
   margin-top: 1rem;
 }
 
-.question.correct {
-  background-color: rgba(0, 128, 0, 0.6);
-  color: white;
-}
-
-.Question.correct:hover {
-  background-color: rgba(0, 128, 0, 1);
-}
-
 .Question.error {
   background-color: rgba(255, 0, 0, 0.6);
   color: white;
 }
 
-.Question.error:hover {
+.flex p.correct {
+  background-color: rgba(0, 128, 0, 1) !important;
+  color: white !important;
+}
+
+.flex p.error {
   background-color: rgba(255, 0, 0, 1);
+  color: white;
 }
 
 #contador-acertos {
